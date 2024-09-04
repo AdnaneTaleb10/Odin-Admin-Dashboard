@@ -99,6 +99,7 @@ a{
     font-size: 1.55rem;
     font-family: var(--ff-poppins);
     font-weight: var(--fw-600);   
+    color: var(--primary-color);
 }
 
 .navbar-list{
@@ -229,6 +230,7 @@ a{
 
 .username p{
     font-family: var(--ff-poppins);
+    color: var(--primary-color);
 }
 
 .profile-controls{
@@ -250,4 +252,34 @@ a{
 .control:hover{
     transform: scale(1.05);
     box-shadow: 0 2px 4px 0 var(--search-icon);
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 25px;
+    column-gap: 30px;
+}
+
+.project{
+
+}
+
+.h2 {
+    font-size: 1.25rem;
+    font-weight: var(--fw-600);
+    color: var(--primary-color);
+}
+
+.h3 {
+    font-size: 1rem;
+    font-weight: var(--fw-600);
+    margin-right: 1.25rem;
+    color: var(--primary-color);
+}
+
+.headline-interaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
