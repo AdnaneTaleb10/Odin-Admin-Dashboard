@@ -59,7 +59,7 @@ a{
 }
 
 .container{
-    
+    display: grid;
 }
 
 .header{
@@ -109,8 +109,6 @@ a{
     align-items: center;
 }
 
-
-
 .search{
     display: flex;
     align-items: center;
@@ -140,9 +138,6 @@ a{
     color: var(--search-txt);
 }
 
-
-
-
 .search svg:nth-child(3) {
     width: 25px;
     font-weight: 800;
@@ -163,6 +158,10 @@ a{
 .profile-pic{
    width: 60px;
    border-radius: 100%; 
+}
+
+.hero{
+    display: flex;
 }
 
 .sidebar{
@@ -206,4 +205,49 @@ a{
 
 .sidebar-item:focus .item-text{
     color: white;
+}
+
+.main{
+    width: 100%;
+    padding: 2em;
+}
+
+.main-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: var(--white);
+    border-radius: 16px;
+}
+
+.profile-information{
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.username p{
+    font-family: var(--ff-poppins);
+}
+
+.profile-controls{
+    display: flex;
+    gap: 3em;
+}
+
+.control{
+    color: var(--white);
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--active);
+    border-radius: 30px;
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+.control:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px 0 var(--search-icon);
 }
