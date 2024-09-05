@@ -170,7 +170,7 @@ a{
     display: flex;
     flex-direction: column;
     width: 17%;
-    height: 100vh;
+    height: auto;
 }
 
 .sidebar-list{
@@ -282,4 +282,63 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.project-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card{
+    background-color: var(--white);
+    padding: 1.25rem;
+    border: 1px solid var(--card-border);
+    border-radius: 30px;
+}
+
+.h4{
+    font-size: 0.875rem;
+    margin: 5px 0;
+    color: var(--primary-color);
+}
+
+.card-text{
+    font-size: 0.75rem;
+    color: var(--search-icon);
+    margin-bottom: 50px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.icons div{
+    background-color: var(--bg-color);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 7.5px;
+    transition: var(--transition);
+}
+
+hr{
+    width: inherit;
+    background-color: var(--card-border);
+    height: 1px;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.icons div:hover{
+    background-color: var(--search-icon);
+    color: var(--white);
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px 0 var(--search-icon);
 }
