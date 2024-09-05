@@ -291,7 +291,7 @@ a{
     gap: 2rem;
 }
 
-.project-card, .announcement-items{
+.project-card, .announcement-items, .trending-items{
     background-color: var(--white);
     padding: 1.25rem;
     border: 1px solid var(--card-border);
@@ -343,7 +343,17 @@ hr{
     box-shadow: 0 2px 4px 0 var(--search-icon);
 }
 
+.information-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: repeat(2, 1fr);
+}
+
 .announcement-items{
+    margin-top: 1.25rem;
+}
+
+.announcement-items, .trending-items {
     margin-top: 1.25rem;
 }
 
@@ -360,5 +370,25 @@ hr{
     background-color: var(--announcement-lining);
     margin-top: 16px;
     margin-bottom: 16px;
+}
+
+.trending-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.trending-item{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.trending-item > img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
 }
 
