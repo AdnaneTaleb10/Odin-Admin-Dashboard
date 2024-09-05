@@ -154,11 +154,13 @@ a{
     width: 50px;
     height: 50px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .profile-pic{
    width: 60px;
    border-radius: 100%; 
+   cursor: pointer;
 }
 
 .hero{
