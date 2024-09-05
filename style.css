@@ -291,7 +291,7 @@ a{
     gap: 2rem;
 }
 
-.project-card{
+.project-card, .announcement-items{
     background-color: var(--white);
     padding: 1.25rem;
     border: 1px solid var(--card-border);
@@ -342,3 +342,23 @@ hr{
     transform: scale(1.1);
     box-shadow: 0 2px 4px 0 var(--search-icon);
 }
+
+.announcement-items{
+    margin-top: 1.25rem;
+}
+
+.announcement-items:last-child {
+    padding-bottom: 3.5rem;
+}
+
+.announcement-text{
+    font-size: 0.875rem;
+    color: var(--search-icon);
+}
+
+.announcement-hr {
+    background-color: var(--announcement-lining);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
